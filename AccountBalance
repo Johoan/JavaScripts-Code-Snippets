@@ -1,0 +1,25 @@
+class BankAccount{
+  constructor(owner, balance){
+    this.owner = owner;
+    this.balance = balance;
+  }
+  ShowBalance(){
+    console.log("Balance: " + this.balance + " EUR");
+  }
+  
+  Deposit(amount){
+    console.log('Depositing ' + amount + ' EUR');
+    this.balance += amount;
+    this.ShowBalance();
+  }
+  Withdraw(amount){
+    console.log('Withdrawing ' +amount+ ' EUR');
+    this.balance -= amount;
+    this.ShowBalance();
+  }
+}
+
+const newAccount = new BankAccount('John Smith', 100000);
+newAccount.ShowBalance();
+newAccount.Deposit(50000);
+newAccount.Withdraw(25000);
