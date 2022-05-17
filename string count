@@ -1,0 +1,32 @@
+// split('') ie with a space, splits the string into letters
+
+const getWordCount = (stringToTest) => {
+  const wordArray = stringToTest.split('');
+  console.log('Word array in getWordCount: ');
+  console.log(wordArray);
+  return wordArray.length;
+}
+getWordCount("john is back");
+
+
+// split(' ') ie with two spaces, splits the string into words
+
+const getWordCount = (stringToTest) => {
+  const wordArray = stringToTest.split('');
+  console.log('Word array in getWordCount: ');
+  console.log(wordArray);
+  return wordArray.length;
+}
+getWordCount("john is back");
+
+
+
+// split('') ie with three spaces, splits the string into group of words
+
+const getWordCount = (stringToTest) => {
+  const wordArray = stringToTest.split('  ');
+  console.log('Word array in getWordCount: ');
+  console.log(wordArray);
+  return wordArray.length;
+}
+getWordCount("john is back");
